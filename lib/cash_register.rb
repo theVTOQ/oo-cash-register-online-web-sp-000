@@ -1,4 +1,4 @@
-#require 'pry'
+require 'pry'
 class CashRegister
   attr_accessor :total, :items, :last_price, :last_quantity, :discount
 
@@ -20,6 +20,7 @@ class CashRegister
   end
 
   def apply_discount
+    binding.pry
     if discount == 0.0
       puts "There is no discount to apply."
     else
