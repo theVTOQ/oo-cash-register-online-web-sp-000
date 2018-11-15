@@ -1,3 +1,4 @@
+require 'pry'
 class CashRegister
   attr_accessor :total, :items, :last_price, :last_quantity, :discount
 
@@ -23,6 +24,7 @@ class CashRegister
       puts "There is no discount to apply."
     else
       @total *= 1.0 - @discount/100.0
+      bindind.pry
       puts "After the discount, the total comes to $#{@total}."
     end
   end
