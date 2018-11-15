@@ -30,4 +30,5 @@ class CashRegister
   end
 end
 reg = CashRegister.new(20)
-reg.add_item("a", )
+reg.add_item("a", 1000)
+reg.apply_discount
