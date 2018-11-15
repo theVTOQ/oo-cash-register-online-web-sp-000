@@ -2,7 +2,7 @@ class CashRegister
   attr_accessor :total, :items, :last_price, :last_quantity, :discount
 
   def initialize(discount = 0)
-    @discount = discount
+    @discount = Float (discount)
     @items = []
   end
 
