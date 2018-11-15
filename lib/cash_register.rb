@@ -2,7 +2,7 @@ require 'pry'
 class CashRegister
   attr_accessor :total, :items, :last_price, :last_quantity, :discount
 
-  def initialize(discount = 0.0)
+  def initialize(discount = 0)
     @total = 0
     @discount = Float (discount)
     @items = []
@@ -29,3 +29,5 @@ class CashRegister
     end
   end
 end
+reg = CashRegister.new(20)
+reg.add_item("a", )
