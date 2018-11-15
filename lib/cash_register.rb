@@ -22,11 +22,11 @@ class CashRegister
   def apply_discount
     #binding.pry
     if @discount == 0.0
-      puts "There is no discount to apply."
+      return "There is no discount to apply."
     else
       @total *= 1.0 - @discount/100.0
       total_as_int = Integer (@total)
-      puts "After the discount, the total comes to $#{total_as_int}."
+      return "After the discount, the total comes to $#{total_as_int}."
     end
   end
 end
