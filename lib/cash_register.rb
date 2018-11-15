@@ -25,7 +25,7 @@ class CashRegister
     else
       @total *= 1.0 - @discount/100.0
       binding.pry
-      puts "After the discount, the total comes to $#{@total}."
+      puts "After the discount, the total comes to $#{Integer (@total)}."
     end
   end
 end
